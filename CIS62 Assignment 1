@@ -1,0 +1,33 @@
+class Mccann_Java1 // Change to Mccann_Java1 this is Main Class
+ {
+  public static void main(String[] args) {
+    // Begin Program
+    String stars = "*************************************************************";  // declare sting variable of asterisks
+    String hMnI = "Hello, My name is"; // declare hello variable
+    String name = "Levi Mccann"; //declare name variable
+    String taking = "I am taking"; //declare taking variable
+    String course1 = "CIS 61"; //course 1 variable
+    String course2 = "CIS 62";  //course 2 variable
+    String course3 = "CIS 76";  //course 3 variable
+    String course4 = "CIS 92";  //course 4 variable
+
+    String date = "Today is January 13, 2020";
+    String day = "Have a good day!";
+
+    System.out.println(stars);
+    System.out.println(hMnI +" "+ name);
+    System.out.println(taking +" "+ course1 +" "+ course2 +" "+ course3 +" and "+ course4);
+    System.out.println(date);
+    System.out.println(day);
+    System.out.println(stars);
+
+  
+  
+  
+  
+  
+  
+  
+  //  System.out.println("Hello world!");
+  }
+}
