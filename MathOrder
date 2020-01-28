@@ -1,0 +1,45 @@
+//********************************************
+//JAVA
+//Levi McCann
+//01/27/2020
+//DearDorff
+//Assignment 2 Shows the precedent of arithmetic operators
+//********************************************
+import java.lang.Math; // headers MUST be above the first class
+
+public class Mccann_java2{
+  public static void main(String[] args) 
+  {
+    int a1 = -5; //initialize variables 
+    int a2 = 8; //initialize variables
+    int a3 = 6;  //initialize variables
+    int atotal = a1 + a2 * a3;  // calculate total
+    int b1 = (55+9);  //initialize variable with addition
+    int b2 = 9; //initialize variable
+    int btotal = b1 % b2; //calculate total of remainder modulus
+    int c1 = 20; //initialize c variable
+    int c2 = -3; //initialze c2 variable
+    int c3 = 5; //initialze c3 variable
+    int c4 = 8; //initialize c4 Variable
+    int ctotal = c1 + c2 *c3 / c4; // calculate total for c
+    int d1 = 5; //initialize variable
+    int d2 = 15; //initialize d2 variable
+    int d3 = 3; //initialize d3 variable
+    int d4 = 2; //initialize d4 variable
+    int d5 = 8; //initialize d5 variable
+    int d6 = 3; // initialize d6 variable
+    int dtotal =d1 + d2 / d3 * d4 - d5 % d6;  // calculate total for d
+    
+    
+    
+    //display output for question a
+    System.out.println("The total for question a is " + atotal);
+    System.out.println("The total for question a is " + btotal);
+    System.out.println("The total for question a is " + ctotal);
+    System.out.println("The total for question a is " + dtotal);
+
+
+
+
+  }
+}
