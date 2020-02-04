@@ -1,0 +1,46 @@
+//******************************************************
+//JAVA 10.2.x
+//Levi McCann
+//02/04/2020
+//Multiplication Table 1-100 Makes a ForLoop table for user input
+//DearDorff
+//******************************************************
+
+
+import java.util.Scanner;
+
+class ForLoopMultiplicationCalc {
+  public static void main(String[] args)
+  {
+    // Create a new System input object
+    Scanner scanner = new Scanner(System.in);
+    //Declare and initialize variables
+    int timesTable;
+    int counter;
+    int total;
+    //ask the user what multiplication table they want //to view
+    System.out.println("What multiplication table would you like to view?");
+
+  //Accept user input
+  timesTable = scanner.nextInt();
+  //What value would you like to display
+  System.out.println("What value would you like to display to?");
+  counter = scanner.nextInt();
+
+  //For loop for multiplication table
+  for (int i=0; i <= counter; i++ ) 
+  {
+    total = timesTable * i;
+    System.out.println(timesTable + " x " + i + " = " + total);
+
+  }
+
+  
+
+
+
+    
+    
+  //  System.out.println("Hello world!");
+  }
+}
