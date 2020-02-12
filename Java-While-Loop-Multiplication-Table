@@ -1,0 +1,40 @@
+//*******************************************
+//JAVA 10.0.2
+//Levi McCann
+//02/12/2020
+//Multiplication Table using While Loop for Extra
+// credit.
+//Deardorff
+//*******************************************
+
+
+public class McCannMultiplicationTable 
+{
+  //main part of program
+  public static void main (String args[])
+  {
+    //Print to display top line
+    System.out.print("Multiplication table\n");
+    //declare and initialize variable
+      int i=1;
+      //Enter row loop
+      while(i<=10)
+      { 
+        //declare and initialize 2nd variable
+      int j=1; 
+      //Enter column loop
+        while(j<=10)
+        {
+          //prints table and with tab
+        System.out.print(i*j+"\t"); 
+        //increment by 1
+          j++;
+            }
+            //add 1 to variable
+            i++;
+            //print to next line
+            System.out.println();
+        }
+         
+    }
+}
