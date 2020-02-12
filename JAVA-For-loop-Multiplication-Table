@@ -1,0 +1,39 @@
+//*****************************************************
+//JAVA 10.0.2
+//Levi McCann
+//02/04/2020
+//Deardorf
+//Multiplication Table
+// This program prints a multiplcation table.
+//*****************************************************
+
+class Main
+ {
+  public static void main(String[] args)
+   {
+  //declare constants
+  final int TOTAL_ROW = 10;
+  final int TOTAL_COL = TOTAL_ROW;
+  //for loop to make rows initialize local variables
+  for (int row = 1; row <= TOTAL_ROW; row++)
+  {
+  //This print line adds an extra line between rows
+    System.out.println(" ");
+
+    //used 4 spacing formatting to print table correctly
+    System.out.printf("%4d| ",  (row));
+  //  System.out.println("");
+  //nested loop to get a table design
+      for (int col = 1; col <= TOTAL_COL; col++ )
+      {
+        System.out.printf("%5d", (row*col));
+
+
+      }
+  }
+  //add next line after nested loop to print next row
+  System.out.println(" ");
+  
+  //  System.out.println("Hello world!");
+  }
+}
