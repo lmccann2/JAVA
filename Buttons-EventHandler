@@ -1,0 +1,64 @@
+//*******************************************************
+//JAVA
+//Levi McCann
+//03/02/2020
+//CIS JAVA
+//*******************************************************
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class ActionListenerExample extends JFrame implements ActionListener
+{
+  public static JTextField tf = new JTextField();
+  
+  public ActionListenerExample (String title)
+  {
+    super(title);
+    tf.setBounds(50,50,150,20);
+    
+    JButton b =new JButton("Click Here");
+    b.setBounds(50,100,150,30);
+    b.addActionListener(new ActionListener() {
+      public void actionPerformed(ActionEvent e){
+        ap1();
+      }
+ 	});
+                      
+    JButton b2 =new JButton("Click Here 2");
+    b2.setBounds(50,150,150,30);
+    b2.addActionListener(new ActionListener() {
+      public void actionPerformed(ActionEvent e){
+        ap2();
+      }
+    });
+    
+   // b.addActionListener(this);
+    
+    add(b);
+    add(b2);
+    add(tf);
+  }
+  
+  public static void main(String[] args)
+  {
+    ActionListenerExample myWindow = new ActionListenerExample("Example");
+    myWindow.setLayout(null);
+    myWindow.setSize(400,400);
+    myWindow.setVisible(true);
+  }
+  public void ap1()
+  {
+                         tf.setText("Clicking Button 1.");
+  }
+  public void ap2()
+  {
+                         tf.setText("Clicking Button 2.");
+  }
+  public void actionPerformed(ActionEvent e) 
+  {
+	tf.setText("Hello Java!");
+
+  }
+}
