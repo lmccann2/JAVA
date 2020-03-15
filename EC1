@@ -1,0 +1,172 @@
+//*******************************************************
+//Levi McCann
+//JAVA Extra Credit Assignment 1
+//3/13/2020
+//Deardorff
+//*******************************************************
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.JTextField;
+import javax.swing.JLabel;
+
+public class ActionListenerExample extends JFrame implements ActionListener
+{
+  public static JTextField tf = new JTextField(); //create textField object
+
+  				
+  				JTextField tf1 = new JTextField();
+  				JTextField tf2 = new JTextField();
+  				JTextField tf3 = new JTextField();
+  		  		JTextField tf4 = new JTextField();
+  				JTextField tf5 = new JTextField();
+  				JTextField tf6 = new JTextField();
+    			JTextField tf7 = new JTextField();
+  				JTextField tf8 = new JTextField();
+  		  		JTextField tf9 = new JTextField();		//create 10th TextField object
+  
+  				//create JLabel object and put it in center
+  
+  				JLabel lblName = new JLabel("Name:", JLabel.CENTER);
+  				JLabel lblLastName = new JLabel("Last Name:", JLabel.CENTER);	
+  				JLabel lblStreetAddress = new JLabel("Street:", JLabel.CENTER);
+  				JLabel lblCity = new JLabel("City:", JLabel.CENTER);
+  				JLabel lblState = new JLabel("State:", JLabel.CENTER);
+  				JLabel lblZip = new JLabel("Zip Code:", JLabel.CENTER);
+  				JLabel lblAreaCode = new JLabel("Area Code:", JLabel.CENTER);
+  				JLabel lblPhoneNumber = new JLabel("Phone Number:", JLabel.CENTER);
+  				JLabel lblEmail = new JLabel("Email:", JLabel.CENTER);
+  				JLabel lblContact = new JLabel("Contact:", JLabel.CENTER);
+  				
+  public ActionListenerExample (String title)
+  {
+    super(title);
+    tf.setBounds(100,50,150,20);  /place textields on form and set bounds
+    tf1.setBounds(100,70,150,20);
+    tf2.setBounds(100,90,150,20);
+    tf3.setBounds(100,110,150,20);
+    tf4.setBounds(100,130,150,20);
+    tf5.setBounds(100,150,150,20);
+    tf6.setBounds(100,170,150,20);
+    tf7.setBounds(100,190,150,20);
+    tf8.setBounds(100,210,150,20);
+    tf9.setBounds(100,230,150,20);
+    
+    
+    
+    lblName.setText("First Name:");
+    lblName.setBounds(0,50,75,10);
+    lblLastName.setText("Last Name:");
+    lblLastName.setBounds(0,70,75,10);
+    lblStreetAddress.setText("Street:");
+    lblStreetAddress.setBounds(0,90,75,10);
+    lblCity.setText("City:");
+    lblCity.setBounds(0,110,75,10);
+	lblState.setText("State:");
+    lblState.setBounds(0,130,75,10);
+    lblZip.setText("Zip Code:");
+    lblZip.setBounds(0,150,75,10);
+    lblAreaCode.setText("Area Code:");
+    lblAreaCode.setBounds(0,170,75,10);
+    lblPhoneNumber.setText("Phone Number:");
+    lblPhoneNumber.setBounds(0,190,90,10);
+    lblEmail.setText("Email:");
+    lblEmail.setBounds(0,210,75,10);
+    lblContact.setText("Contact:");
+    lblContact.setBounds(0,230,75,10);
+    
+    
+    //Set labels to visible
+    lblContact.setVisible(true);
+    lblEmail.setVisible(true);
+    lblPhoneNumber.setVisible(true);
+    lblAreaCode.setVisible(true);
+    
+    lblZip.setVisible(true);
+    lblCity.setVisible(true);
+    lblState.setVisible(true);
+    lblStreetAddress.setVisible(true);
+    lblLastName.setVisible(true);
+    lblName.setVisible(true);
+
+
+  
+
+    
+    
+    JButton b =new JButton("Submit");
+    b.setBounds(100,300,150,30);
+    b.addActionListener(new ActionListener() {
+      public void actionPerformed(ActionEvent e){
+        ap1();
+      }
+ 	});
+                      
+    JButton b2 =new JButton("Clear");
+    b2.setBounds(100,350,150,30);
+    b2.addActionListener(new ActionListener() {
+public void actionPerformed(ActionEvent e){
+        ap2();
+      }
+    });
+    
+   // b.addActionListener(this);
+    
+    add(b);		//add Submit button
+    add(b2);	//add Clear button
+    add(tf);	//add textField1
+    add(tf1);
+    add(tf2);	//add tf3 textField3
+    add(tf3);
+    add(tf4);
+    add(tf5);	// add tf5 textField6
+    add(tf6);
+    add(tf7);
+    add(tf8);
+    add(tf9);	// add tf9 textField 10
+    add(lblName);  //add labels to textFields -First Name
+    add(lblLastName);  //Last Name
+    add(lblStreetAddress);
+    add(lblCity);
+    add(lblState);
+    add(lblZip);
+    add(lblAreaCode);
+    add(lblPhoneNumber); //add Phone Number Label
+    add(lblEmail);
+    add(lblContact);  //add last Label
+
+  }
+  
+  public static void main(String[] args)
+  {
+    ActionListenerExample myWindow = new ActionListenerExample("Extra Credit 1: Levi McCann");
+    myWindow.setLayout(null);
+    myWindow.setSize(500,450);
+    myWindow.setVisible(true);
+  }
+  public void ap1()
+  {
+                         tf.setText("You Submitted your Information");
+    					
+  }
+  public void ap2()
+  {
+                        tf.setText("");
+    					tf1.setText("");
+    					tf2.setText("");
+    					tf3.setText("");
+    					tf4.setText("");
+    					tf5.setText("");
+    					tf6.setText("");
+    					tf7.setText("");
+    					tf8.setText("");
+    					tf9.setText("");
+    				//	tf1.setText("");
+  }
+  public void actionPerformed(ActionEvent e) 
+  {
+	tf.setText("");
+
+  }
+}
